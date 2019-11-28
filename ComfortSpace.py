@@ -4,6 +4,9 @@ import threading
 import pygame
 from matplotlib import cm
 
+import pygame.midi
+
+
 def sim():
 
     # This matrix will be based on the note relationships.
@@ -88,7 +91,7 @@ screen = pygame.display.set_mode((500, 500))
 p_clock = pygame.time.Clock()
 
 import time
-time.sleep(5)
+#time.sleep(5)
 
 threading.Thread(target=sim).start()
 
